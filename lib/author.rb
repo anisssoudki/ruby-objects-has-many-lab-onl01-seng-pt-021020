@@ -24,7 +24,7 @@ def posts
    newpost = Post.new(title)
   newpost.all.select do |n|
    
-   self << @posts
+   @posts << name
   end
 end
   
