@@ -22,7 +22,10 @@ class Author
   end
 
   def posts
-    @posts
+    Post.all.select do |n|
+    posts.author == self 
+    
+  end
   end
 
   def add_post(post)
