@@ -24,7 +24,7 @@ def posts
    newpost = Post.new(title)
   newpost.all.select do |n|
     posts.author == self 
-    
+    @posts << self
   end
 end
   
