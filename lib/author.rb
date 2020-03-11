@@ -13,7 +13,7 @@
 #     is a class method that returns the total number of posts associated to all existing authors (FAILED - 9)
 require "pry"
 class Author 
-  attr_accessor :name
+  attr_accessor :name, :posts
   @@post_count = 0
 
   def initialize(name)
