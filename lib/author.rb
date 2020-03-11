@@ -22,7 +22,7 @@ end
 
 def posts 
    newpost = Post.new(title)
-  Post.all.select do |n|
+  newpost.all.select do |n|
     posts.author == self 
     
   end
