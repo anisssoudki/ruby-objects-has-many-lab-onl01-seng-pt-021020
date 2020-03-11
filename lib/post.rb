@@ -26,7 +26,7 @@ class Post
     
   end
   
-  def author_name(author)
+  def author_name
     if @author == nil
       return nil 
     else 
