@@ -12,38 +12,34 @@
 #   .post_count
 #     is a class method that returns the total number of posts associated to all existing authors (FAILED - 9)
 require "pry"
-class Author 
-attr_accessor :name, :posts
-@@post_count =  0
-def initialize(name)
-@name = name 
-@posts = []
-end
+lass Author 
+  attr_accessor :name
+  @@post_count = 0
 
-def posts 
- 
- Post.new.all.select do |n|
-   
-   @posts << @@all
+  def initialize(name)
+    @name = name
+    @posts = []
   end
-end
-  
 
-def add_post(title)
+  def posts
+    @posts
+  end
 
-  @posts << title
- post.author = self
-  @@post_count += 1 
-end
-def add_post_by_title(title)
-  post = Post.new(title)
-  @posts << add_post(title)
-  post.author = self 
-  @@post_count +=1
-end
-def self.post_count
-  
-  @@post_count
-end
-end
+  def add_post(post)
+    @posts << post
+    post.author = self
+    @@post_count += 1
+  end
+
+  def add_post_by_title(post_title)
+    post = Post.new(post_title)
+    @posts << post
+    post.author = self
+    @@post_count += 1
+  end
+
+  def self.post_count
+    @@post_count
+  end
+
 
