@@ -12,7 +12,7 @@
 #   .post_count
 #     is a class method that returns the total number of posts associated to all existing authors (FAILED - 9)
 require "pry"
-lass Author 
+class Author 
   attr_accessor :name
   @@post_count = 0
 
