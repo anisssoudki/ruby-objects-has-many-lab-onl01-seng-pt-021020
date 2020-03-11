@@ -28,8 +28,8 @@ end
 # end
   
 
-def add_post(postarg)
- newpost = Post.new(postarg)
+def add_post(title)
+ newpost = Post.new(title)
   @posts << newpost
  
   @@post_count += 1 
