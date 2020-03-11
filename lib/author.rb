@@ -24,7 +24,7 @@ def posts
  
  Post.new.all.select do |n|
    
-   @posts << @title
+   @posts << @@@all
   end
 end
   
