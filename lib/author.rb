@@ -21,6 +21,7 @@ def initialize(name)
 end
 
 def posts 
+   newpost = Post.new(title)
   Post.all.select do |n|
     posts.author == self 
     
