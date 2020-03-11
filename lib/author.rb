@@ -24,7 +24,7 @@ class Author
   def posts
     Post.all.select do |n|
     post.author == self 
-    @posts
+
   end
   end
 
