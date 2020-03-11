@@ -22,6 +22,7 @@ class Author
   end
 
   def posts
+    Posts
     @posts
 
   
