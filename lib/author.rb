@@ -29,7 +29,7 @@ end
   
 
 def add_post(postarg)
- newpost = Post.new(postarg)
+ newpost = Post.new(postarg).author
   @posts << newpost
  
   @@post_count += 1 
