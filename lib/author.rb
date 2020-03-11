@@ -42,4 +42,4 @@ lass Author
     @@post_count
   end
 
-
+end
