@@ -21,8 +21,8 @@ def initialize(name)
 end
 
 def posts 
-   newpost = Post.new(title)
-  newpost.all.select do |n|
+ 
+ Post.new.all.select do |n|
    
    @posts << name
   end
