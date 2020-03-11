@@ -20,12 +20,12 @@ def initialize(name)
 @posts = []
 end
 
-# def posts 
-#   Post.all.select do |n|
-#     posts.author == self 
+def posts 
+  Post.all.select do |n|
+    posts.author == self 
     
-#   end
-# end
+  end
+end
   
 
 def add_post(title)
