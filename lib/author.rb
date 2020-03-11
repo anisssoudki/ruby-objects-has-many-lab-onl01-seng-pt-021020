@@ -21,11 +21,8 @@ class Author
     @posts = []
   end
 
-  def posts
-    Posts
-    @posts
-
-  
+    def posts
+    Post.all.select { |post| post.author == self }
   end
 
   def add_post(post)
